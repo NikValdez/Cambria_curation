@@ -1,0 +1,18 @@
+<!-- <p id="notice"><%= notice %></p> -->
+
+<p>
+  <strong>Name:</strong>
+  <%= @rate_podcast.name %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @rate_podcast.rating %>
+</p>
+<p>
+	<%= rating_for @rate_podcast, 'podcast', star: 5, disable_after_rate: false, imdb_avg: true  %>
+</p>
+
+<%= link_to 'Edit', edit_rate_podcast_path(@rate_podcast) %> |
+<%= link_to 'Back', rate_podcasts_path %>
+

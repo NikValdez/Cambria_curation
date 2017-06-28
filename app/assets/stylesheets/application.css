@@ -15,3 +15,8 @@
  *= require bootstrap
  *= require font_awesome
  */
+
+th {
+	text-align: center;
+	padding: 20px;
+}

@@ -1,0 +1,88 @@
+.rating-page {
+	background: #83a4d4;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+	background: #1ab7ea;
+
+
+
+}
+
+h1 {
+	text-align: center;
+	font-weight: 700;
+	text-shadow: 0 0 1px #1ab7ea;
+	
+}
+thead {
+	border: 2px solid #337ab7;
+	padding-bottom: 20px;
+	
+	
+}
+
+th {
+	font-size: 30px;
+	font-weight: 100;
+	border: 2px black;
+	
+}
+
+tr {
+	font-size: 20px;
+	font-weight: 100;
+	margin: 5px;
+}
+
+td {
+	padding-right: 25px;
+	padding-top: 40px;
+}
+
+.banner {
+	background: #1c92d2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+
+body {
+	background: #1c92d2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+}
+
+#ratingNav {
+	background: #1c92d2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #f2fcfe, #1c92d2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	border: none;
+	.rate-header {
+		color: #1ab7ea; 
+		&:hover {
+			color: #337ab7;
+		} 
+	}
+}
+
+.navbar-default .navbar-nav > li > a {
+	text-shadow: 0 0 2px #1ab7ea;	
+	color: black; 
+	&:hover {
+		color: #337ab7;
+	} 
+}
+
+
+input, button, select, textarea {
+	border-radius: 5px;
+	width: 140px;
+	padding: 10px;
+	text-align: center;
+	text-shadow: 0 0 2px #1ab7ea;	
+	background: transparent;
+	border-color: #337ab7;
+	font-weight: 900;
+	&:hover {
+		opacity: .5;
+	}
+}

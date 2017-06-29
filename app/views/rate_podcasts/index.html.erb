@@ -23,8 +23,7 @@
       <% @rate_podcasts.each do |rate_podcast| %>
         <tr>
           <td><%= rate_podcast.name %></td>
-          <td><%= rating_for rate_podcast, 'podcast', star: 5, disable_after_rate: true %>
-          
+          <td><%= rating_for rate_podcast, 'podcast', star_path: '/images/ratyrate', star: 5, disable_after_rate: true %>
           </td>
            
         </tr>

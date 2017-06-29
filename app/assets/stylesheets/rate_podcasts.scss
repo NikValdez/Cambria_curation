@@ -2,9 +2,7 @@
 	background: #83a4d4;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
 	background: #1ab7ea;
-
-
-
+	text-align: center;
 }
 
 h1 {
@@ -16,21 +14,25 @@ h1 {
 thead {
 	border: 2px solid #337ab7;
 	padding-bottom: 20px;
-	
-	
 }
+
+table {
+	margin: 0 auto;
+}
+
 
 th {
 	font-size: 30px;
 	font-weight: 100;
 	border: 2px black;
+	text-align: center;
 	
 }
 
 tr {
 	font-size: 20px;
 	font-weight: 100;
-	margin: 5px;
+	
 }
 
 td {
@@ -74,6 +76,7 @@ body {
 
 
 input, button, select, textarea {
+	margin: 25px;
 	border-radius: 5px;
 	width: 140px;
 	padding: 10px;

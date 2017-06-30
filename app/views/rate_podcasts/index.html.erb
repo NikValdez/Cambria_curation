@@ -1,5 +1,6 @@
 <!-- <p id="notice"><%= notice %></p> -->
 <head><%= javascript_include_tag 'ratyrate.js', "data-turbolinks-track" => false %></head>
+<%= render 'navbar_rating' %>
 <div class="banner">
   <div class="wrapper">
     <h1>Rate This Week's Podcasts</h1>
@@ -24,7 +25,7 @@
       <% @rate_podcasts.each do |rate_podcast| %>
         <tr>
           <td><%= rate_podcast.name %></td>
-          <td><%= rating_for rate_podcast, 'podcast', path: '/images/ratyrate', disable_after_rate: true %>
+         
           
           </td>
            

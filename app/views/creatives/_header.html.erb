@@ -4,8 +4,12 @@
             <h1>Your Time is Valuable, We're Here to Help</h1>
             <hr>
             <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-            <a href="/users/sign_up" class="btn btn-primary btn-xl page-scroll">Sign up Now!</a>
-        </div>
+            <%- if user_signed_in? %>
+        
+            <% else %>
+				<a href="/users/sign_up" class="btn btn-primary btn-xl page-scroll">Sign up Now!</a>
+	        <% end %>
+	     </div>
     </div>
 </header>
 

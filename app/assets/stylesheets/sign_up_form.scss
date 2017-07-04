@@ -1,0 +1,190 @@
+$form-height: 600px;
+$form-width: 400px;
+
+// colors
+$white: rgba(255, 255, 255, 1);
+$white-80: rgba(255, 255, 255, 0.8);
+$white-60: rgba(255, 255, 255, 0.6);
+$white-40: rgba(255, 255, 255, 0.4);
+$white-20: rgba(255, 255, 255, 0.2);
+$white-10: rgba(255, 255, 255, 0.1);
+$blue: rgba(27,102,234, 1);
+$blue-80: rgba(27,102,234, 0.8);
+$purple: rgba(51, 0, 102, 1);
+$purple-80: rgba(51, 0, 102, 0.8);
+$teal: rgba(88, 201, 185, 0.1);
+$teal-80: rgba(88, 201, 185, 0.8);
+$light-blue: #1ab7ea;
+
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  min-height: $form-height;
+  min-width: $form-width;
+  width: 95vw;
+  font-family: sans-serif;
+  font-size: 13px;
+  color: white;
+  
+  a {
+    color: blue;
+    text-decoration: none;
+  }
+}
+
+#attribution {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+  font-size: 12px;
+  color: grey;
+}
+
+#signup-form {
+  position: relative;
+  height: $form-height;
+  width: $form-width;
+  box-shadow: 0 15px 20px -6px #777;
+  border-radius: 3px;
+  overflow: hidden;
+  
+  .content {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-image: asset-data-url("creative/headphones.png");
+    opacity: 0.8;
+    background-color: $light-blue;
+
+
+
+    z-index: 999;
+  }
+}
+
+#signin-opts {
+  width: 80%;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  font-size: 1.5rem;
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    display: inline;
+    padding: 0 5px 0 5px;
+    
+    &:first-child {
+      padding-left: 0;
+    }
+    
+    a {
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $white-60;
+      
+      &:hover {
+        color: $white-80;
+      }
+      
+      &.active {
+        color: $white;
+        border-bottom: 2px solid $blue;
+      }
+    }
+  }
+}
+
+#signin-form {
+  width: 90%;
+  margin: auto;
+  margin-left: 50px;
+  
+  label, 
+  input[type=text],
+  input[type=password],
+  button {
+    display: block;
+  }
+  
+  label.inline {
+    display: inline;
+  }
+  
+  label {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #337ab7;
+    text-align: center;
+  }
+  
+  input[type=text],
+  input[type=password],
+  input[type=email] {
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    background-color: $white-60;
+    border: none;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    color: black;
+    font-size: 18px;
+    
+    &:focus {
+      outline: none;
+      background-color: $white-40;
+    }
+  }
+  
+.sign-up-submit{
+width: 100%;
+border-radius: 20px;
+border: none;
+background-color: #337ab7;
+color: $white;
+height: 35px;
+font-size: 14px;
+text-transform: uppercase;
+margin-top: 30px;
+opacity: none;
+    
+    &:focus,
+    &:hover {
+      background-color: $blue-80;
+      cursor: pointer;
+    }
+  }
+}
+
+
+
+#bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: $form-height;
+  width: $form-width;
+  z-index: 0;
+}
+
+
+
+.actions {
+  padding-top: 65px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin-left: 65px;
+  padding-bottom: 25px;
+  color: #337ab7;
+}

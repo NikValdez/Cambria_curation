@@ -76,13 +76,13 @@ body {
 
 
 input, button, select, textarea {
-	margin: 25px;
+	margin: 0;
 	border-radius: 5px;
 	width: 140px;
 	padding: 10px;
 	text-align: center;
 	text-shadow: 0 0 2px #1ab7ea;	
-	background: transparent;
+	background: #337ab7;
 	border-color: #337ab7;
 	font-weight: 900;
 	&:hover {

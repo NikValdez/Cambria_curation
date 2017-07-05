@@ -19,13 +19,11 @@ $light-blue: #1ab7ea;
 
 
 body {
-  display: flex;
   align-items: center;
   justify-content: center;
   height: 95vh;
   min-height: $form-height;
   min-width: $form-width;
-  width: 95vw;
   font-family: sans-serif;
   font-size: 13px;
   color: white;
@@ -52,6 +50,7 @@ body {
   box-shadow: 0 15px 20px -6px #777;
   border-radius: 3px;
   overflow: hidden;
+  margin: 0 auto;
   
   .content {
     position: relative;
@@ -148,7 +147,7 @@ body {
 width: 100%;
 border-radius: 20px;
 border: none;
-background-color: #337ab7;
+background-color: #1ab7ea;
 color: $white;
 height: 35px;
 font-size: 14px;
@@ -188,3 +187,24 @@ h2 {
   padding-bottom: 25px;
   color: #337ab7;
 }
+
+.sign-in-submit{
+width: 100%;
+border-radius: 20px;
+border: none;
+background-color: #1ab7ea;
+color: $white;
+height: 35px;
+font-size: 14px;
+text-transform: uppercase;
+margin-top: 110px;
+opacity: none;
+    
+    &:focus,
+    &:hover {
+      background-color: $blue-80;
+      cursor: pointer;
+    }
+  }
+
+

@@ -78,14 +78,27 @@ body {
 input, button, select, textarea {
 	margin: 0;
 	border-radius: 5px;
+	border: none;
 	width: 140px;
+	margin: 30px;
 	padding: 10px;
 	text-align: center;
 	text-shadow: 0 0 2px #1ab7ea;	
 	background: #337ab7;
-	border-color: #337ab7;
-	font-weight: 900;
+	font-weight: 700;
 	&:hover {
-		opacity: .5;
+		opacity: .8;
 	}
 }
+
+
+input[type="checkbox"] {
+	float: right;
+}
+
+
+
+
+
+
+

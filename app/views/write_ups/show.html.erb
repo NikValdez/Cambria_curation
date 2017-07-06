@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+
+<%= image_tag @write_up.image.url(:medium) %>
+
+
+<p>
+  <strong>Title:</strong>
+  <%= @write_up.title %>
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @write_up.content %>
+</p>
+
+<%= link_to 'Edit', edit_write_up_path(@write_up) %> |
+<%= link_to 'Back', write_ups_path %>

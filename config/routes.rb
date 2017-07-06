@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :write_ups
   post '/rate' => 'rater#create', :as => 'rate'
   devise_for :users
   resources :rate_podcasts

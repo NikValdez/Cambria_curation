@@ -22,6 +22,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'font-awesome-sass'
 gem 'devise'
 gem 'ratyrate'
+gem "paperclip", "~> 5.0.0"
 
 
 group :development, :test do

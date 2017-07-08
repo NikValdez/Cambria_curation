@@ -23,6 +23,7 @@ gem 'font-awesome-sass'
 gem 'devise'
 gem 'ratyrate'
 gem "paperclip", "~> 5.0.0"
+gem 'trix'
 
 
 group :development, :test do

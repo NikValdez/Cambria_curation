@@ -55,6 +55,7 @@ hr.small {
   background-size: cover;
   -o-background-size: cover;
   margin-bottom: 50px;
+  min-height: 70%;
   
 }
 .intro-header .site-heading,

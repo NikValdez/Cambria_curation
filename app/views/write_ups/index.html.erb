@@ -1,8 +1,5 @@
 <%= render 'rate_podcasts/navbar_rating' %>
 <p id="notice"><%= notice %></p>
-  
-
-<%= link_to 'New Write Up', new_write_up_path %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -30,24 +27,28 @@
     <![endif]-->
 
 </head>
+<header id="intro-header">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+                <h1 class="write_up-heading">This Week in Fincasts</h1>
+                <h2 class="subheading">Information Distilled</h2>
+           
+                 
+            </div>
+        </div>
+    </header>
 
-<body>
+
+
+
+<body class="write_up_body">
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Page Heading -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">This Week in Fincasts
-                    <!-- <small>Information Distilled</small> -->
-                </h1>
-            </div>
-        </div>
-        <!-- /.row -->
+       
 
 
-<!-- 
-     <tbody>
+  <!--    <tbody>
     <% @write_ups.each do |write_up| %>
       <tr>
         <td><%= write_up.title %></td>
@@ -58,8 +59,8 @@
       </tr>
     <% end %>
   </tbody>
-</table>
-  -->
+</table> -->
+
         
 
           
@@ -72,8 +73,8 @@
                 </a>
             </div>
             <div class="col-md-5">
-                <h3> <%= write_up.title %> </h3>
-                <h4>Subheading</h4>
+                <h3 class="write_up_title"> <%= write_up.title %> </h3>
+                <h4 class="write_up_title">Posted <%= time_ago_in_words(write_up.created_at) %> ago</h4>
                 <p><%= truncate write_up.content, length: 250 %></p>
                 <%=link_to "Read More", write_up, class: "btn btn-primary" %>
             </div>
@@ -123,7 +124,7 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
+                    <p>Copyright &copy; Cambria 2017</p>
                 </div>
             </div>
             <!-- /.row -->
@@ -141,3 +142,4 @@
 </body>
 
 </html>
+<%= link_to 'New Write Up', new_write_up_path %>

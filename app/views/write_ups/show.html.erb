@@ -59,7 +59,7 @@
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
                 <h1><%= @write_up.title %></h1>
-                <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
+                <h2 class="subheading">Curated Notes</h2>
                 <span class="meta">Posted <%= time_ago_in_words(@write_up.created_at) %> ago
 </span>
                  
@@ -72,7 +72,10 @@
         <div class="container-white">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <p class="p-color"><%= @write_up.content %></p>
+                    <p class="p-color">
+                    <%= simple_format(@write_up.content) %>
+                        
+                    </p>
                 </div>
             </div>
         </div>

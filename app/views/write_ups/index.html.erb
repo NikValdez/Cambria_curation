@@ -11,7 +11,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>1 Col Portfolio - Start Bootstrap Template</title>
+  
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -75,7 +75,7 @@
             <div class="col-md-5">
                 <h3 class="write_up_title"> <%= write_up.title %> </h3>
                 <h4 class="write_up_title">Posted <%= time_ago_in_words(write_up.created_at) %> ago</h4>
-                <p><%= truncate write_up.content, length: 250 %></p>
+                <p><%= sanitize(write_up.content.truncate(250, separator: '</p>')) %></p>
                 <%=link_to "Read More", write_up, class: "btn btn-primary" %>
             </div>
         </div>
@@ -85,6 +85,7 @@
       <% end %>
 
             
+
 
         
 

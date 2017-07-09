@@ -58,7 +58,9 @@
       <% @rate_podcasts.each do |rate_podcast| %>
         <tr>
           <td><%= rate_podcast.name %></td>
+          <div class="readonly-star">
           <td><%= rating_for rate_podcast, 'podcast', star: 5, cancel: true %>
+          </div>
           
           </td>
            <td><%= link_to 'Show', rate_podcast %></td>
@@ -68,7 +70,6 @@
       <% end %>
     </tbody>
   </table>
-
 
 
 

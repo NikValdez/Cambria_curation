@@ -26,7 +26,6 @@ th {
 	font-weight: 100;
 	border: 2px black;
 	text-align: center;
-	
 }
 
 tr {
@@ -101,10 +100,17 @@ input[type="checkbox"] {
 	background-image: asset-data-url("creative/star-rating.jpg");
 	margin-bottom: 50px;
     min-height: 70%;
-    background-size: cover;
- 
+    background-size: cover; 
 }
 
 
+img.raty-cancel {
+     display: none;
+  }
+
+.rate_podcast_submit {
+	margin-top: 35px;
+	margin-bottom: 60px;
+}
 
 

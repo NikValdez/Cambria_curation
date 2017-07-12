@@ -113,4 +113,16 @@ img.raty-cancel {
 	margin-bottom: 60px;
 }
 
+#disqus_thread {
+  overflow: hidden;
 
+  iframe {
+    margin-bottom: -54px;
+  }
+}
+.comments-button {
+	margin: 75px;
+	color: black;
+	background: transparent;
+	border: 1px solid #337ab7;
+	}

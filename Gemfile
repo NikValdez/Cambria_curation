@@ -24,6 +24,7 @@ gem 'devise'
 gem 'ratyrate'
 gem "paperclip", "~> 5.0.0"
 gem 'trix'
+gem 'activeadmin'
 
 
 group :development, :test do

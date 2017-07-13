@@ -24,7 +24,7 @@ table {
 th {
 	font-size: 30px;
 	font-weight: 100;
-	border: 2px black;
+	border: 1px black;
 	text-align: center;
 }
 
@@ -83,10 +83,11 @@ input, button, select, textarea {
 	padding: 10px;
 	text-align: center;
 	text-shadow: 0 0 2px #1ab7ea;	
-	background: #337ab7;
-	font-weight: 700;
+	color: black;
+	background: transparent;
+	border: 1px solid #337ab7;
 	&:hover {
-		opacity: .8;
+		opacity: .4;
 	}
 }
 
@@ -111,6 +112,7 @@ img.raty-cancel {
 .rate_podcast_submit {
 	margin-top: 35px;
 	margin-bottom: 60px;
+
 }
 
 #disqus_thread {
@@ -121,8 +123,19 @@ img.raty-cancel {
   }
 }
 .comments-button {
-	margin: 75px;
+	width: 15%;
 	color: black;
+	margin-left: 45%;
+	margin-bottom: 20px;
 	background: transparent;
 	border: 1px solid #337ab7;
-	}
+	
+}
+
+.comments {
+	background: transparent;
+	border: 1px solid #337ab7;
+	margin-top: 100px;
+	padding: 10px;
+	
+}

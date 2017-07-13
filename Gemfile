@@ -25,6 +25,7 @@ gem 'ratyrate'
 gem "paperclip", "~> 5.0.0"
 gem 'trix'
 gem 'activeadmin'
+gem 'active_skin'
 
 
 group :development, :test do

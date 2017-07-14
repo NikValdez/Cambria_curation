@@ -58,7 +58,7 @@
         <tr>
           <td><%= rate_podcast.name %></td>
           <div class="readonly-star">
-          <td><%= rating_for rate_podcast, 'podcast', star: 5, cancel: true %>
+          <td><%= rating_for rate_podcast, 'podcast', { readonly: true}  %>
           </div>
           
           </td>

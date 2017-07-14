@@ -63,9 +63,10 @@ ActiveAdmin.setup do |config|
   # ensure that there is a user with proper rights. You can use
   # CanCanAdapter or make your own. Please refer to documentation.
   # config.authorization_adapter = ActiveAdmin::CanCanAdapter
-  config.authorization_adapter = ActiveAdmin::CanCanAdapter  # In case you prefer Pundit over other solutions you can here pass
-  config.on_unauthorized_access = :access_denied
-  config.cancan_ability_class = "AdminAbility"
+  # config.authorization_adapter = ActiveAdmin::CanCanAdapter  # In case you prefer Pundit over other solutions you can here pass
+  # config.cancan_ability_class = "Ability"
+  # config.on_unauthorized_access = :access_denied
+  
 
   # the name of default policy class. This policy will be used in every
   # case when Pundit is unable to find suitable policy.

@@ -86,6 +86,9 @@
 
 </section>
 
-<!-- <%= link_to 'New Rate Podcast', new_rate_podcast_path %> -->
+<% if can? :create, @rate_podcasts %>
+  <%= link_to 'New Rate Podcast', new_rate_podcast_path %>
+<% end %>
+
 
 

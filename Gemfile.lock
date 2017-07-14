@@ -63,6 +63,7 @@ GEM
       thor (~> 0.19)
     builder (3.2.3)
     byebug (9.0.6)
+    cancancan (2.0.0)
     caracal (1.0.8)
       nokogiri (~> 1.6)
       rubyzip (~> 1.1)
@@ -262,6 +263,7 @@ DEPENDENCIES
   activeadmin
   bcrypt (~> 3.1.7)
   byebug
+  cancancan (~> 2.0)
   caracal-rails
   coffee-rails (~> 4.2)
   devise

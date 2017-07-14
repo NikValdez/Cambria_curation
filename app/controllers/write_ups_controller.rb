@@ -1,5 +1,8 @@
 class WriteUpsController < ApplicationController
+  load_and_authorize_resource
+  before_action :authenticate_user!
   before_action :set_write_up, only: [:show, :edit, :update, :destroy]
+
 
   # GET /write_ups
   # GET /write_ups.json

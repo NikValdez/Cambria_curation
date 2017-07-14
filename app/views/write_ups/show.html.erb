@@ -136,5 +136,7 @@
 </body>
 
 </html>
-<%= link_to 'Edit', edit_write_up_path(@write_up) %> |
+<% if can? :update, @write_up %>
+    <%= link_to 'Edit', edit_write_up_path(@write_up) %> |
+ <% end %>
 <%= link_to 'Back', write_ups_path %>

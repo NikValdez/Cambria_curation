@@ -143,4 +143,6 @@
 </body>
 
 </html>
-<%= link_to 'New Write Up', new_write_up_path %>
+<% if can? :create, @write_ups %>
+    <%= link_to 'New Write Up', new_write_up_path %>
+<% end %>

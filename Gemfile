@@ -26,6 +26,7 @@ gem "paperclip", "~> 5.0.0"
 gem 'trix'
 gem 'activeadmin'
 gem 'active_skin'
+gem 'cancancan', '~> 2.0'
 
 
 group :development, :test do

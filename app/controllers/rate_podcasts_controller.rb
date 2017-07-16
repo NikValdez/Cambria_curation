@@ -11,6 +11,7 @@ class RatePodcastsController < ApplicationController
   # GET /rate_podcasts/1
   # GET /rate_podcasts/1.json
   def show
+    @rate_podcasts = RatePodcast.find(params[:id])  
   end
 
   # GET /rate_podcasts/new
@@ -70,6 +71,6 @@ class RatePodcastsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def rate_podcast_params
-      params.require(:rate_podcast).permit(:name, :rating)
+      params.require(:rate_podcast).permit(:name, :rating, :image)
     end
 end

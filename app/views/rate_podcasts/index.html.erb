@@ -30,6 +30,7 @@
     <tbody>
       <% @rate_podcasts.each do |rate_podcast| %>
         <tr>
+          <td><%= image_tag rate_podcast.image.url(:thumb), :class => "img_thumb" %></td>
           <td><%= rate_podcast.name %></td>
           <td><%= rating_for rate_podcast, 'podcast', star: 5, path: '/images/ratyrate', disable_after_rate: true %></td>
         </tr>
@@ -56,6 +57,7 @@
     <tbody>
       <% @rate_podcasts.each do |rate_podcast| %>
         <tr>
+          <td><%= image_tag rate_podcast.image.url(:thumb), :class => "img_thumb"  %></td>
           <td><%= rate_podcast.name %></td>
           <div class="readonly-star">
           <td><%= rating_for rate_podcast, 'podcast', { readonly: true}  %>

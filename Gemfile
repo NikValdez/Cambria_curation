@@ -27,7 +27,7 @@ gem 'trix'
 gem 'activeadmin'
 gem 'active_skin'
 gem 'cancancan', '~> 2.0'
-gem 'aws-sdk', '< 2'
+gem 'aws-sdk'
 
 
 group :development, :test do

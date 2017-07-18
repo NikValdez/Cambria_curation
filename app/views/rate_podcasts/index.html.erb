@@ -64,30 +64,23 @@
           </div>
           
           </td>
-           <td><%= link_to 'Show', rate_podcast %></td>
+          <!--  <td><%= link_to 'Show', rate_podcast %></td> -->
+          <% if can? :update, @rate_podcasts %>
            <td><%= link_to 'Edit', edit_rate_podcast_path(rate_podcast) %></td> 
-          <td><%= link_to 'Destroy', rate_podcast, method: :delete, data: { confirm: 'Are you sure?' }%></td> 
+           <% end %>
+          <% if can? :delete, @rate_podcasts %>
+          <td><%= link_to 'Destroy', rate_podcast, method: :delete, data: { confirm: 'Are you sure?' }%></td>
+          <% end %> 
         </tr>
       <% end %>
     </tbody>
   </table>
-
-
-
   <h3 class="comments">See what the community is saying this week and add your own insights!</h3>
-
-
-
  <div class="col-md-12">
   <%= render 'disqus' %>
 </div>
-
-
   <br>
-  
-
 </section>
-
 <% if can? :create, @rate_podcasts %>
   <%= link_to 'New Rate Podcast', new_rate_podcast_path %>
 <% end %>
